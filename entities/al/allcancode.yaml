@@ -1,0 +1,62 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5h93mha713sqc97am778apv
+  slug: allcancode
+  slug_aliases: []
+  name: Allcancode
+  domains:
+    - value: allcancode.com
+      role: primary
+      valid_from: 2026-10-22T07:40:00.000Z
+  category: devtools-other
+profile:
+  summary: Allcancode provides a product-development platform and expert services for building web and mobile applications.
+  description: Allcancode provides a product-development platform and expert services for building web and mobile applications.
+  links:
+    site: https://www.allcancode.com
+    pricing: https://www.allcancode.com/pricing
+sources:
+  - source_id: src_db609dcf6c9cc8f118b2545aef5549f5a0619ac7399c7145fa72be5cc6e9add9
+    url: https://www.allcancode.com/accelerators
+  - source_id: src_254acab2c2ce1db92e7f5474d72ff98680e7fee2e704a499175ad00a3b0bf001
+    url: https://www.allcancode.com/pricing
+programs: []
+offers:
+  - offer_id: off_01m5h93mhcrpjmm3wx8q360pza
+    offer_slug: accelerator-incubator-up-to-15-percent-discount
+    offer_slug_aliases: []
+    title: Up to 15% off for accelerator and incubator startups
+    summary: Startups enrolled in or graduated from an approved accelerator or incubator can receive up to 15% off Allcancode services after eligibility verification.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-22T07:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          kind: discount
+          description: Up to 15% off for eligible accelerator or incubator startups.
+          applies_to: Allcancode paid product-development services
+          percentage:
+            kind: up-to
+            basis_points: 1500
+      consideration:
+        kind: variable
+        description: The startup pays the remaining service price. Allcancode bills weeks in advance to allocate resources; monthly billing requires payment for four weeks in advance.
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_01
+        reason: external-verification
+        statement: The applicant is a startup enrolled in or graduated from an approved acceleration or incubation program. Allcancode verifies the program to determine discount eligibility.
+    roles:
+      terms_authority_entity_id: ent_01m5h93mha713sqc97am778apv
+      access_operator_entity_id: ent_01m5h93mha713sqc97am778apv
+    access:
+      availability: public
+      method: contact
+      url: https://www.allcancode.com/accelerators
+      instructions: Contact Allcancode and mention the approved accelerator or incubator for eligibility verification. If the program is not listed, submit the accelerator website through the form for review.
+    terms_url: https://www.allcancode.com/accelerators
+    source_ids:
+      - src_db609dcf6c9cc8f118b2545aef5549f5a0619ac7399c7145fa72be5cc6e9add9
+      - src_254acab2c2ce1db92e7f5474d72ff98680e7fee2e704a499175ad00a3b0bf001
